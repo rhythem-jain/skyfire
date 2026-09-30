@@ -1,0 +1,25 @@
+{
+  "name": "skyfire-black-horizon",
+  "private": true,
+  "version": "0.1.0",
+  "description": "An original browser-based 3D helicopter combat game built with Three.js and TypeScript.",
+  "type": "module",
+  "engines": { "node": "22.x" },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "tsx --test tests/*.test.ts",
+    "test:browser": "node tests/browser.mjs",
+    "test:resilience": "node tests/resilience.mjs"
+  },
+  "dependencies": { "three": "^0.170.0" },
+  "devDependencies": {
+    "@types/three": "^0.170.0",
+    "@types/node": "^22.10.0",
+    "typescript": "~5.7.2",
+    "vite": "^6.0.5",
+    "tsx": "^4.19.2",
+    "@playwright/test": "1.51.1"
+  }
+}

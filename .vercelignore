@@ -1,0 +1,22 @@
+# Vercel rebuilds from source; never upload local generated files.
+node_modules/
+dist/
+test-results/
+playwright-report/
+coverage/
+*.log
+*.tsbuildinfo
+
+# Local configuration and private files
+.git/
+.vercel/
+.env
+.env.*
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Repository documentation is not needed by the deployment build.
+docs/
+AGENTS.md
